@@ -1,0 +1,21 @@
+= A simple HTTP server strictly for development and static content
+
+
+== Development Server
+
+The server is optimised for development only:
+
+* Nothing is cached. So changes can be seen immediately.
+* This means performance is good enough for a couple of developers but it would go down with more traffic.
+
+
+== Static Server
+
+Only static content is served. No forms can be filled and dynamic content isn't supported.
+
+
+== Only GET Requests
+
+Only HTTP get requests are supported. The content has to get to the server in a different way.
+Usually the content is edited directly in the directory it is served from.
+But of course content can get there via scp too.
